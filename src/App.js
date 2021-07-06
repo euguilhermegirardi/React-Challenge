@@ -11,7 +11,7 @@ function FormProvider(props) {
 function useInputValues() {
   const contextValues = React.useContext(FormContext)
   if(!contextValues) {
-    throw new Error('useInputValues must be used within a CountProvider')
+    throw new Error('useInputValues must be used within a FormProvider')
   }
   return contextValues
 }
